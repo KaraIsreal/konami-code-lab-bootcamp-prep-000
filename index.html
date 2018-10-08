@@ -50,7 +50,9 @@ function onKeyDownHandler(e){
     index++;
     if(index === codes.length){
       alert("Congrats friend!")
-
+      for (let i = 0, l = codes.length; i < l; i++) {
+        triggerKeyDown(codes[i]);
+      }
       index = 0;
     }
   } else{
