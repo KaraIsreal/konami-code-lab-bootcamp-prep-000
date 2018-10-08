@@ -40,6 +40,10 @@
   "a"
 ];
 let index  = 0;
+const tap = document.body('tap');
+tap.addEventListener('keydown', function(e){
+  console.log(e.key);
+}); 
 function onKeyDownHandler(e){
   const key = e.key;
   if (key === codes[index]{
@@ -49,7 +53,7 @@ function onKeyDownHandler(e){
 
       index = 0;
     }
-  } else{ 
+  } else{
   index = 0;
 }
 }
