@@ -26,7 +26,34 @@
     <script src="node_modules/sinon/pkg/sinon.js"></script>
 
     <!-- Include the student's JavaScript file. -->
-    <script src="konami_code.js"></script>
+    <script src="konami_code.js">
+    const codes = [
+  "ArrowUp",
+  "ArrowUp",
+  "ArrowDown",
+  "ArrowDown",
+  "ArrowLeft",
+  "ArrowRight",
+  "ArrowLeft",
+  "ArrowRight",
+  "b",
+  "a"
+];
+let index = 0;
+    const tap = document.body('body');
+    body.addEventListener('keydown', function(codes){
+  if (codes === tap[index]){
+    index++;
+
+  if (index ===codes.length){
+    alert('Congrats friend!');
+  }
+} else{
+  index = 0;
+}
+}
+}      
+    </script>
 
     <!-- Include the JavaScript file containing the tests. -->
     <script src="test/indexTest.js"></script>
