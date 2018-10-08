@@ -26,39 +26,7 @@
     <script src="node_modules/sinon/pkg/sinon.js"></script>
 
     <!-- Include the student's JavaScript file. -->
-    <script src="konami_code.js">
-    const codes = [
-  "ArrowUp",
-  "ArrowUp",
-  "ArrowDown",
-  "ArrowDown",
-  "ArrowLeft",
-  "ArrowRight",
-  "ArrowLeft",
-  "ArrowRight",
-  "b",
-  "a"
-];
-let index  = 0;
-const body = document.querySelectorAll('body');
-body.init('keydown', function(e){
-  console.log(e.key);
-});
-function onKeyDownHandler(e){
-  const key = e.key;
-  if (key === codes[index]{
-    index++;
-    if(index === codes.length){
-      alert("Congrats friend!")
-      for (let i = 0, l = codes.length; i < l; i++) {
-        triggerKeyDown(codes[i]);
-      }
-    }
-  } else {
-  index = 0;
-}
-}
-    </script>
+    <script src="konami_code.js"></script>
 
     <!-- Include the JavaScript file containing the tests. -->
     <script src="test/indexTest.js"></script>
