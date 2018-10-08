@@ -41,7 +41,7 @@
 ];
 let index  = 0;
 const body = document.querySelectorAll('body');
-body.addEventListener('keydown', function(e){
+body.init('keydown', function(e){
   console.log(e.key);
 });
 function onKeyDownHandler(e){
